@@ -20,7 +20,7 @@ Plain static HTML/CSS/JS — no build step, no animation libraries. Open any `.h
 
 Each CSS/JS file starts with a table of contents.
 
-After changing CSS or JS, bump `?v=7` in the `<link>`/`<script>` tags of the pages so browsers load the new version.
+After changing CSS or JS, bump `?v=8` in the `<link>`/`<script>` tags of the pages so browsers load the new version.
 
 ## Pages
 
