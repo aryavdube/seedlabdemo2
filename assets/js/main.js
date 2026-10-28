@@ -114,7 +114,8 @@
     };
     btn.addEventListener('click', () => toggle(!nav.classList.contains('open')));
     document.addEventListener('keydown', e => { if (e.key === 'Escape') toggle(false); });
-    document.addEventListener('click', e => { if (nav.classList.contains('open') && !e.target.closest('.site-header')) toggle(false); });
+    // composedPath, not target.closest: the menu button swaps its icon on click, detaching e.target
+    document.addEventListener('click', e => { if (nav.classList.contains('open') && !e.composedPath().includes(header)) toggle(false); });
     addEventListener('resize', () => { if (innerWidth > 1080) toggle(false); });
 
     const themeBtn = $('.theme-btn');
