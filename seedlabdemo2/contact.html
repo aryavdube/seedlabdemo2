@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact — SEED Lab · UCLA</title>
+  <meta name="description" content="How to reach the SEED Laboratory at the UCLA Semel Institute.">
+  <meta name="theme-color" content="#FAF8F5">
+  <meta property="og:title" content="Contact — SEED Lab · UCLA">
+  <meta property="og:description" content="How to reach the SEED Laboratory at the UCLA Semel Institute.">
+  <meta property="og:image" content="assets/logo/seed-lab-og.png">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Styles: theme.css = colors/fonts · base.css = shared · pages.css = per page -->
+  <link rel="stylesheet" href="assets/css/theme.css?v=7">
+  <link rel="stylesheet" href="assets/css/base.css?v=7">
+  <link rel="stylesheet" href="assets/css/pages.css?v=7">
+  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('seed-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-page="contact" id="top">
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap page-head-grid">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h1>Find the right person, <span class="grad-text">fast</span></h1>
+          <p class="lede">Tell us what you're reaching out about and we'll point you to the best contact. Families interested in a study can go straight to our study interest form.</p>
+        </div>
+        <div class="page-head-art"><canvas data-strings="page" aria-hidden="true"></canvas></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <!-- Topic chooser: each button's data-topic matches "topics" in data.js → CONTACTS -->
+        <div class="chooser reveal" id="chooser" role="group" aria-label="What are you reaching out about?">
+          <span>I'm reaching out about…</span>
+          <button class="chip" type="button" data-topic="research" aria-pressed="false">Research &amp; collaboration</button>
+          <button class="chip" type="button" data-topic="press" aria-pressed="false">Press &amp; media</button>
+          <button class="chip" type="button" data-topic="tech" aria-pressed="false">Website &amp; technology</button>
+          <button class="chip" type="button" data-topic="study" aria-pressed="false">Joining a study</button>
+        </div>
+        <p class="chooser-hint" id="chooserHint" aria-live="polite">Pick a topic and we'll point you to the right person.</p>
+
+        <!-- People cards are added from data.js → CONTACTS; the families card below stays last -->
+        <div class="people" id="people">
+          <article class="person families reveal" data-topics="study">
+            <span class="best">Best option</span>
+            <div class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0M14.5 19a4 4 0 0 1 6.5-3"/></svg></div>
+            <h3>Families</h3>
+            <div class="role"><span class="pill warm">Study participation</span></div>
+            <p>Interested in taking part in research? Share a few details and our study team will reach out to talk through eligibility privately.</p>
+            <a class="btn btn-primary" href="participate.html">Join a study <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1 6h10M6.5 1.5 11 6l-4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+        </div>
+
+        <!-- Visit -->
+        <div class="visit reveal">
+          <div class="visit-body">
+            <span class="eyebrow">Visit</span>
+            <address>Semel Institute for Neuroscience &amp; Human Behavior<br>760 Westwood Plaza<br>Los Angeles, CA 90095</address>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="https://maps.google.com/?q=760+Westwood+Plaza+Los+Angeles+CA" target="_blank" rel="noopener">Open in Maps ↗</a>
+              <button class="copy-btn" type="button" data-copy="760 Westwood Plaza, Los Angeles, CA 90095" style="padding:.8rem 1.1rem;background:var(--bg-2)"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M11 5V3.5A1.5 1.5 0 0 0 9.5 2h-6A1.5 1.5 0 0 0 2 3.5v6A1.5 1.5 0 0 0 3.5 11H5" stroke="currentColor" stroke-width="1.4"/></svg><span>Copy address</span></button>
+            </div>
+            <p class="small muted" style="margin-top:1.5rem">Visits are by appointment. <span class="placeholder">Add parking and building directions.</span></p>
+          </div>
+          <div class="visit-media"><img src="assets/img/royce-hall.webp" alt="Royce Hall on the UCLA campus" loading="lazy"></div>
+        </div>
+
+        <div class="notice reveal" style="margin-top:2rem">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M10 6v5M10 13.5v.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <p><strong>Lab positions:</strong> we're not accepting applications for lab positions at this time. Please check back later.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <!-- Scripts: data.js = content · strings.js = forked-paths visual · main.js = header/footer/pages -->
+  <script src="assets/js/data.js?v=7" defer></script>
+  <script src="assets/js/strings.js?v=7" defer></script>
+  <script src="assets/js/main.js?v=7" defer></script>
+</body>
+</html>

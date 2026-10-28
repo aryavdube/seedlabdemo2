@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>News — SEED Lab · UCLA</title>
+  <meta name="description" content="News, papers, talks and lab life from the SEED Laboratory at UCLA.">
+  <meta name="theme-color" content="#F1ECE2">
+  <meta property="og:title" content="News — SEED Lab · UCLA">
+  <meta property="og:description" content="News, papers, talks and lab life from the SEED Laboratory at UCLA.">
+  <meta property="og:image" content="assets/logo/seed-lab-og.png">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,401,500,501,700&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>(function(){var h=document.documentElement;h.classList.remove('no-js');var s={};try{s=JSON.parse(window.name||'{}')||{};}catch(e){s={};}if(s.theme)h.dataset.theme=s.theme;var r=document.referrer,same=false;try{same=r&&new URL(r).host===location.host;}catch(e){}if(same&&s.nav)h.classList.add('is-entering');if(same)h.classList.add('no-loader');})();</script>
+</head>
+<body data-page="news">
+  <main id="main">
+    <section class="page-hero">
+      <canvas class="ph-canvas" data-page-canvas aria-hidden="true"></canvas>
+      <div class="wrap">
+        <span class="eyebrow">News</span>
+        <h1 class="display ph-title" data-lines><span class="line"><span>Notes from</span></span><span class="line"><span>the <em>field.</em></span></span></h1>
+        <div class="ph-foot">
+          <p class="lede">Funding, papers, talks, new members and moments from lab life.</p>
+          <div class="ph-index mono"><span>Updated regularly</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:clamp(1rem,3vw,2rem)">
+      <div class="wrap">
+        <div id="newsFeature"></div>
+        <div class="news-list" id="newsList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer data-header="dark"></footer>
+
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="assets/vendor/lenis.min.js" defer></script>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

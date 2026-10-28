@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Publications — SEED Lab · UCLA</title>
+  <meta name="description" content="Peer-reviewed articles, preprints and chapters from the SEED Laboratory at UCLA.">
+  <meta name="theme-color" content="#FAF8F5">
+  <meta property="og:title" content="Publications — SEED Lab · UCLA">
+  <meta property="og:description" content="Peer-reviewed articles, preprints and chapters from the SEED Laboratory at UCLA.">
+  <meta property="og:image" content="assets/logo/seed-lab-og.png">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Styles: theme.css = colors/fonts · base.css = shared · pages.css = per page -->
+  <link rel="stylesheet" href="assets/css/theme.css?v=7">
+  <link rel="stylesheet" href="assets/css/base.css?v=7">
+  <link rel="stylesheet" href="assets/css/pages.css?v=7">
+  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('seed-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-page="publications" id="top">
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap page-head-grid">
+        <div>
+          <span class="eyebrow">Publications</span>
+          <h1>Our published work</h1>
+          <p class="lede">Peer-reviewed articles, preprints, chapters and conference work. Lab members appear in bold.</p>
+          <div class="btn-row" style="margin-top:1.5rem"><a class="link" href="#">Google Scholar profile ↗</a></div>
+        </div>
+        <div class="page-head-art"><canvas data-strings="page" aria-hidden="true"></canvas></div>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap">
+        <div class="toolbar">
+          <label class="search">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5.25" stroke="currentColor" stroke-width="1.4"/><path d="m11 11 3.5 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <span class="sr-only">Search publications</span>
+            <input id="pubSearch" type="search" placeholder="Search title, author, journal, topic…" autocomplete="off">
+          </label>
+          <div class="filters" id="pubFilters" role="group" aria-label="Filter by type"></div>
+        </div>
+        <p class="result-count" id="pubCount" aria-live="polite"></p>
+        <div id="pubList"></div>
+        <div class="empty" id="pubEmpty">
+          <p class="h3">No publications match.</p>
+          <p style="margin-top:.5rem">Try a different search term or filter.</p>
+          <button class="btn btn-outline" id="pubClear" type="button" style="margin-top:1.5rem">Clear filters</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <!-- Scripts: data.js = content · strings.js = forked-paths visual · main.js = header/footer/pages -->
+  <script src="assets/js/data.js?v=7" defer></script>
+  <script src="assets/js/strings.js?v=7" defer></script>
+  <script src="assets/js/main.js?v=7" defer></script>
+</body>
+</html>

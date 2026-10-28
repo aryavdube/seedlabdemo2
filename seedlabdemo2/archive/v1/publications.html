@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Publications — SEED Lab · UCLA</title>
+  <meta name="description" content="Peer-reviewed articles, preprints and chapters from the SEED Laboratory at UCLA.">
+  <meta name="theme-color" content="#F1ECE2">
+  <meta property="og:title" content="Publications — SEED Lab · UCLA">
+  <meta property="og:description" content="Peer-reviewed articles, preprints and chapters from the SEED Laboratory at UCLA.">
+  <meta property="og:image" content="assets/logo/seed-lab-og.png">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,401,500,501,700&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>(function(){var h=document.documentElement;h.classList.remove('no-js');var s={};try{s=JSON.parse(window.name||'{}')||{};}catch(e){s={};}if(s.theme)h.dataset.theme=s.theme;var r=document.referrer,same=false;try{same=r&&new URL(r).host===location.host;}catch(e){}if(same&&s.nav)h.classList.add('is-entering');if(same)h.classList.add('no-loader');})();</script>
+</head>
+<body data-page="publications">
+  <main id="main">
+    <section class="page-hero">
+      <canvas class="ph-canvas" data-page-canvas aria-hidden="true"></canvas>
+      <div class="wrap">
+        <span class="eyebrow">Publications</span>
+        <h1 class="display ph-title" data-lines><span class="line"><span>Evidence,</span></span><span class="line"><span>in <em>print.</em></span></span></h1>
+        <div class="ph-foot">
+          <p class="lede">Peer-reviewed articles, preprints, chapters and conference work from the SEED Laboratory. Lab members appear in bold.</p>
+          <div class="ph-index mono"><span><span id="pubTotal">—</span> works</span><a class="link-arrow" href="#">Google Scholar ↗</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:clamp(1rem,2vw,2rem)">
+      <div class="wrap">
+        <div class="toolbar">
+          <label class="search">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5.25" stroke="currentColor" stroke-width="1.4"/><path d="m11 11 3.5 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <span class="sr-only">Search publications</span>
+            <input id="pubSearch" type="search" placeholder="Search title, author, journal, topic…" autocomplete="off">
+          </label>
+          <div class="filters" id="pubFilters" role="group" aria-label="Filter by type"></div>
+        </div>
+        <p class="result-count mono" id="pubCount" style="margin-top:1.5rem" aria-live="polite"></p>
+        <div id="pubList"></div>
+        <div class="empty" id="pubEmpty">
+          <p class="display">No publications match.</p>
+          <p>Try a different search term or filter.</p>
+          <button class="btn btn-ghost" id="pubClear" type="button" style="margin-top:1.5rem">Clear filters</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer data-header="dark"></footer>
+
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="assets/vendor/lenis.min.js" defer></script>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

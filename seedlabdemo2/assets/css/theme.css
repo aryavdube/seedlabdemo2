@@ -1,0 +1,118 @@
+/* ==========================================================================
+   SEED Lab — THEME
+   --------------------------------------------------------------------------
+   Change colors, fonts, sizes and spacing here. Everything else on the site
+   reads these variables, so this is the only file you need for a re-theme.
+
+   Palette: Midnight navy · Cobalt · Copper (from the SEED logo sheet)
+   The four string colors (top → bottom) are:
+     --cobalt, --cobalt-soft, --copper, --peach
+   ========================================================================== */
+
+/* 1. LIGHT MODE (default) ------------------------------------------------- */
+:root {
+  /* Brand */
+  --navy: #10243a;          /* ink · origin node */
+  --navy-2: #1b3352;
+  --cobalt: #3268d9;        /* primary · resilience paths */
+  --cobalt-soft: #7fa2ea;
+  --cobalt-tint: #e9effb;   /* soft cobalt backgrounds */
+  --copper: #c9824f;        /* accent · divergent paths */
+  --peach: #e4b48f;
+  --copper-tint: #f8ede4;   /* soft copper backgrounds */
+
+  /* Surfaces + text */
+  --bg: #faf8f5;            /* page (warm white) */
+  --bg-2: #f2eee8;          /* alternate bands */
+  --surface: #ffffff;       /* cards */
+  --fg: var(--navy);        /* main text */
+  --fg-soft: #33465d;       /* body copy that should still feel warm */
+  --muted: #56667a;         /* secondary text */
+  --rule: rgba(16, 36, 58, 0.12);
+  --link: var(--cobalt);
+  --btn-bg: var(--navy);
+  --btn-fg: #ffffff;
+  --footer-bg: var(--navy);
+  --shadow: 0 1px 2px rgba(16, 36, 58, 0.05), 0 8px 24px rgba(16, 36, 58, 0.06);
+  --shadow-hover: 0 2px 4px rgba(16, 36, 58, 0.06), 0 14px 34px rgba(16, 36, 58, 0.1);
+  --glow-1: rgba(50, 104, 217, 0.10);   /* hero background glow (cobalt) */
+  --glow-2: rgba(201, 130, 79, 0.10);   /* hero background glow (copper) */
+  --img-filter: none;
+
+  /* Type */
+  --font-head: 'Jost', 'Futura', 'Avenir Next', 'Helvetica Neue', sans-serif;
+  --font-body: 'Inter', -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-lg: clamp(1.125rem, 1.05rem + 0.3vw, 1.3rem);
+  --text-xl: clamp(1.35rem, 1.2rem + 0.6vw, 1.75rem);
+  --text-2xl: clamp(1.9rem, 1.5rem + 1.6vw, 2.9rem);
+  --text-3xl: clamp(2.6rem, 1.7rem + 3.8vw, 5rem);
+
+  /* Space + shape */
+  --gutter: clamp(1rem, 0.4rem + 2.6vw, 2.5rem);
+  --section: clamp(4rem, 2.8rem + 5vw, 7.5rem);
+  --maxw: 1200px;
+  --radius: 14px;
+  --radius-lg: 22px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --t: 200ms var(--ease);
+}
+
+/* 2. DARK MODE ------------------------------------------------------------
+   Deep, low-saturation ink so the cobalt + copper accents read clearly.
+   Tints are translucent so they sit naturally on any dark surface.
+   (Same values twice: once for the toggle, once for the system setting.) */
+:root[data-theme='dark'] {
+  --cobalt: #86a8f2;
+  --cobalt-soft: #b3c7f5;
+  --cobalt-tint: rgba(134, 168, 242, 0.13);
+  --copper: #e3a67b;
+  --peach: #efcaa9;
+  --copper-tint: rgba(227, 166, 123, 0.13);
+  --bg: #0d141e;
+  --bg-2: #111a26;
+  --surface: #16202e;
+  --fg: #e9eef5;
+  --fg-soft: #c9d3e0;
+  --muted: #95a3b6;
+  --rule: rgba(233, 238, 245, 0.09);
+  --btn-bg: #e9eef5;
+  --btn-fg: #0d141e;
+  --footer-bg: #0a1018;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.35), 0 14px 34px rgba(0, 0, 0, 0.35);
+  --glow-1: rgba(134, 168, 242, 0.08);
+  --glow-2: rgba(227, 166, 123, 0.07);
+  --img-filter: brightness(0.88) saturate(0.95);
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --cobalt: #86a8f2;
+    --cobalt-soft: #b3c7f5;
+    --cobalt-tint: rgba(134, 168, 242, 0.13);
+    --copper: #e3a67b;
+    --peach: #efcaa9;
+    --copper-tint: rgba(227, 166, 123, 0.13);
+    --bg: #0d141e;
+    --bg-2: #111a26;
+    --surface: #16202e;
+    --fg: #e9eef5;
+    --fg-soft: #c9d3e0;
+    --muted: #95a3b6;
+    --rule: rgba(233, 238, 245, 0.09);
+    --btn-bg: #e9eef5;
+    --btn-fg: #0d141e;
+    --footer-bg: #0a1018;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
+    --shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.35), 0 14px 34px rgba(0, 0, 0, 0.35);
+    --glow-1: rgba(134, 168, 242, 0.08);
+    --glow-2: rgba(227, 166, 123, 0.07);
+    --img-filter: brightness(0.88) saturate(0.95);
+    color-scheme: dark;
+  }
+}

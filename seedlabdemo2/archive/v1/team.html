@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Team — SEED Lab · UCLA</title>
+  <meta name="description" content="Meet Dr. Brittany Wolff and the SEED Lab team at the UCLA Semel Institute.">
+  <meta name="theme-color" content="#F1ECE2">
+  <meta property="og:title" content="Team — SEED Lab · UCLA">
+  <meta property="og:description" content="Meet Dr. Brittany Wolff and the SEED Lab team at the UCLA Semel Institute.">
+  <meta property="og:image" content="assets/logo/seed-lab-og.png">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,401,500,501,700&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>(function(){var h=document.documentElement;h.classList.remove('no-js');var s={};try{s=JSON.parse(window.name||'{}')||{};}catch(e){s={};}if(s.theme)h.dataset.theme=s.theme;var r=document.referrer,same=false;try{same=r&&new URL(r).host===location.host;}catch(e){}if(same&&s.nav)h.classList.add('is-entering');if(same)h.classList.add('no-loader');})();</script>
+</head>
+<body data-page="team">
+  <main id="main">
+    <section class="page-hero">
+      <canvas class="ph-canvas" data-page-canvas aria-hidden="true"></canvas>
+      <div class="wrap">
+        <span class="eyebrow">Team</span>
+        <h1 class="display ph-title" data-lines><span class="line"><span>The people</span></span><span class="line"><span>behind the <em>signatures.</em></span></span></h1>
+        <div class="ph-foot">
+          <p class="lede">Psychiatrists, psychologists, data scientists and students working across disciplines toward earlier, more personal care.</p>
+          <div class="ph-index mono"><span>Est. 20XX</span><span>Westwood, LA</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:clamp(1rem,3vw,2rem)">
+      <div class="wrap">
+        <div class="pi-feature pi" id="piFeature"></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow">Lab members</span>
+            <h2 class="display h-2xl">Our <em>group.</em></h2>
+          </div>
+          <div class="filters" id="teamFilters" role="group" aria-label="Filter team by role"></div>
+        </div>
+        <div class="team-grid" id="teamGrid"></div>
+      </div>
+    </section>
+
+    <section class="bleed" data-header="dark" style="height:85vh">
+      <div class="bleed-media"><img src="assets/img/royce-arcade.webp" alt="Sunlit arched arcade of Royce Hall at UCLA" loading="lazy"></div>
+      <div class="wrap bleed-inner">
+        <span class="eyebrow" style="color:rgba(237,231,218,.75)">Group photo · replace</span>
+        <p class="bleed-quote display"><span class="line" style="display:block;overflow:hidden"><span style="display:inline-block">Many minds,</span></span><span class="line" style="display:block;overflow:hidden"><span style="display:inline-block">one <em>question.</em></span></span></p>
+        <div class="bleed-foot"><p>Swap this image for a lab group photo — just replace assets/img/royce-arcade.webp or change the src here.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="sec-head">
+          <div><span class="eyebrow">Alumni</span><h2 class="display h-2xl">Where they <em>grew.</em></h2></div>
+          <a class="btn btn-ink" href="join.html#positions">Open positions <span class="arr"><svg viewBox="0 0 12 12" fill="none"><path d="M1 6h10M6.5 1.5 11 6l-4.5 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        </div>
+        <ul class="alumni" id="alumni"></ul>
+      </div>
+    </section>
+
+    <div class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+      <div class="drawer-scrim"></div>
+      <div class="drawer-panel">
+        <button class="drawer-close" type="button" aria-label="Close"><svg viewBox="0 0 14 14" fill="none"><path d="M2 2l10 10M12 2 2 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+        <div class="drawer-media"></div>
+        <div class="drawer-body"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer data-footer data-header="dark"></footer>
+
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="assets/vendor/lenis.min.js" defer></script>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

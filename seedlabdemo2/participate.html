@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Join a study — SEED Lab · UCLA</title>
+  <meta name="description" content="Families interested in taking part in SEED Lab research at the UCLA Semel Institute can share their interest here.">
+  <meta name="theme-color" content="#FAF8F5">
+  <meta property="og:title" content="Join a study — SEED Lab · UCLA">
+  <meta property="og:description" content="Families interested in taking part in SEED Lab research at the UCLA Semel Institute can share their interest here.">
+  <meta property="og:image" content="assets/logo/seed-lab-og.png">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Styles: theme.css = colors/fonts · base.css = shared · pages.css = per page -->
+  <link rel="stylesheet" href="assets/css/theme.css?v=7">
+  <link rel="stylesheet" href="assets/css/base.css?v=7">
+  <link rel="stylesheet" href="assets/css/pages.css?v=7">
+  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('seed-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body data-page="participate" id="top">
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap page-head-grid">
+        <div>
+          <span class="eyebrow">Join a study</span>
+          <h1>Help us understand how young minds develop</h1>
+          <p class="lede">We work with children, teens and their families. If you're interested in taking part, share a few details below and our study team will be in touch.</p>
+        </div>
+        <div class="page-head-art"><canvas data-strings="page" aria-hidden="true"></canvas></div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div><span class="eyebrow">How it works</span><h2 class="h2">Taking part, step by step</h2></div>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><h3>Share your interest</h3><p>Fill in the short form below. It takes about two minutes and doesn't commit you to anything.</p></div>
+          <div class="step reveal"><h3>A private call</h3><p>A member of our study team calls to explain the study, answer questions and check eligibility.</p></div>
+          <div class="step reveal"><h3>Visits &amp; activities</h3><p>Activities designed with children and teens in mind. <span class="placeholder">Describe visits, duration and compensation.</span></p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="section alt" id="interest">
+      <div class="wrap form-layout">
+        <div class="reveal">
+          <span class="eyebrow">Study interest form</span>
+          <h2 class="h2">Tell us about your family</h2>
+          <p class="lede" style="margin-top:1rem">We'll never ask for medical details in this form. Questions about eligibility happen on a confidential call with our team.</p>
+
+          <div class="faq">
+            <details><summary>Who can take part?</summary><div class="ans"><span class="placeholder">Eligibility — age range, family history criteria, location.</span></div></details>
+            <details><summary>What does participation involve?</summary><div class="ans"><span class="placeholder">Number of visits, duration and types of activities (questionnaires, tasks, devices).</span></div></details>
+            <details><summary>Is my family's information kept private?</summary><div class="ans">All research at UCLA is reviewed by an Institutional Review Board (IRB). <span class="placeholder">Describe confidentiality and data protections.</span></div></details>
+            <details><summary>Will we be compensated?</summary><div class="ans"><span class="placeholder">Describe compensation and travel or parking support.</span></div></details>
+          </div>
+        </div>
+
+        <div class="form-card reveal">
+          <form class="form" id="studyForm" novalidate>
+            <div class="form-row">
+              <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" required autocomplete="name"></div>
+              <div class="field"><label for="f-relation">I am a…</label>
+                <select id="f-relation" name="relation" required>
+                  <option value="" disabled selected>Select</option>
+                  <option>Parent or guardian</option>
+                  <option>Young adult (18+) interested for myself</option>
+                  <option>Clinician referring a family</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+              <div class="field"><label for="f-phone">Phone <span class="opt">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="f-age">Age of the young person</label>
+                <select id="f-age" name="age" required>
+                  <option value="" disabled selected>Select</option>
+                  <option>Under 8</option>
+                  <option>8–12</option>
+                  <option>13–17</option>
+                  <option>18–25</option>
+                </select>
+              </div>
+              <div class="field"><label for="f-reach">Best time to reach you <span class="opt">(optional)</span></label><input id="f-reach" name="reach" placeholder="e.g. weekday evenings"></div>
+            </div>
+            <div class="field"><label for="f-heard">How did you hear about us? <span class="opt">(optional)</span></label><input id="f-heard" name="heard"></div>
+            <div class="field"><label for="f-msg">Anything you'd like us to know? <span class="opt">(optional)</span></label><textarea id="f-msg" name="message" placeholder="Questions, preferred language, accessibility needs…"></textarea></div>
+            <label class="check"><input type="checkbox" name="consent" required> I agree to be contacted by the SEED Lab study team about research participation.</label>
+            <button class="btn btn-blue" type="submit" style="justify-self:start">Send my interest <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1 6h10M6.5 1.5 11 6l-4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <p class="form-note">This opens your email app with your details filled in, addressed to the lab.</p>
+            <p class="form-ok" id="formOk" role="status">Thank you. Your email app should open with your message ready to send. We usually reply within a few business days.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="notice reveal">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M10 6v5M10 13.5v.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <p><strong>Lab positions:</strong> the SEED Lab is not accepting applications for lab positions right now. This page is for families interested in taking part in research.</p>
+        </div>
+        <div class="notice blue reveal" style="margin-top:1rem">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 17s-6-3.6-6-8.2A3.4 3.4 0 0 1 10 6.5a3.4 3.4 0 0 1 6 2.3C16 13.4 10 17 10 17Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <p><strong>Need help now?</strong> This form is not monitored around the clock. If you or your child are in crisis, call or text <a class="link" href="tel:988">988</a> or call 911. More support is listed on our <a class="link" href="resources.html">Resources</a> page.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+
+  <!-- Scripts: data.js = content · strings.js = forked-paths visual · main.js = header/footer/pages -->
+  <script src="assets/js/data.js?v=7" defer></script>
+  <script src="assets/js/strings.js?v=7" defer></script>
+  <script src="assets/js/main.js?v=7" defer></script>
+</body>
+</html>
